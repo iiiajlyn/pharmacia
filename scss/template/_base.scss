@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $family__base;
+    color: $pallete-dark;
+    margin: 0;
+    padding: 0;
+    font-size: $font-m;
+}
+
+h1,
+h2 {
+    font-family: $family__title;
+    font-size: $font-x;
+    color: $pallete-dark__base;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 30px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+p,
+b,
+i,
+span {
+    &.sea {
+        color: $pallete-base__sea;
+    }
+
+    &.sky {
+        color: $pallete-base__sky;
+    }
+}
+
+h3,
+h4,
+h5,
+ul,
+li,
+p {
+    line-height: 35px;
+    margin: 0;
+
+    @media screen and (max-width: 1200px) {
+        line-height: 25px;
+    }
+}
+
+section {
+    overflow: hidden;
+}
+
+b {
+    color: $pallete-dark__base;
+}
+
+a {
+    text-decoration: none;
+    color: $pallete-base__sea;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+input {
+    border: 1px solid darken($pallete-light__base, 10);
+    padding: 20px 40px;
+    font-size: $font-m;
+    border-radius: $radius-s;
+}
+
+input[type="submit"],
+input[type="button"],
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid $pallete-dark__base;
+    text-align: center;
+    border-radius: $radius-s;
+    padding: 21px 69px;
+    background: $pallete-dark__base;
+    color: $pallete-light;
+    cursor: pointer;
+    @include transition;
+
+    &:hover {
+        box-shadow: rgb(0 0 0 / 10%) 9px 6px 20px;
+        text-decoration: none;
+    }
+
+    &.capsule {
+        border-radius: $radius-x;
+    }
+
+    &.arrow {
+        position: relative;
+        padding-right: 120px;
+
+        @media screen and (max-width: 1200px) {
+            padding-right: 56px;
+
+        }
+
+        &::before {
+            content: "";
+            width: 20px;
+            height: 0px;
+            position: absolute;
+            border-bottom: 1px solid;
+            right: 69px;
+            top: 50%;
+
+            @media screen and (max-width: 1200px) {
+                right: 22px;
+            }
+        }
+
+        &::after {
+            content: "";
+            width: 6px;
+            height: 6px;
+            position: absolute;
+            right: 69px;
+            top: calc(50% - 3px);
+            border-top: 1px solid;
+            border-right: 1px solid;
+            transform: rotate(45deg);
+
+            @media screen and (max-width: 1200px) {
+                right: 22px;
+            }
+        }
+    }
+}
+
+.btn {
+    @media screen and (max-width: 1200px) {
+        padding: 14px 25px;
+    }
+}
+
+input[type="button"],
+input[type="submit"] {
+    @media screen and (max-width: 1200px) {
+        padding: 21px 69px;
+    }
+}
+
+.sea {
+
+    input[type="button"]:hover,
+    .btn:hover {
+        background-color: $pallete-base__sea;
+        border-color: $pallete-base__sea;
+    }
+}
+
+.sky {
+
+    input[type="button"]:hover,
+    .btn:hover {
+        background-color: $pallete-base__sky;
+        border-color: $pallete-base__sky;
+    }
+}
+
+.ico {
+    position: relative;
+
+    &::before {
+        content: "";
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+    }
+
+    &.size-s {
+        margin-left: 25px;
+
+        &::before {
+            left: -25px;
+            width: 20px;
+            height: 20px;
+            top: 8px;
+        }
+    }
+
+    &.point::before {
+        background-image: url(../img/point.png);
+        background-image: url(../img/svg/point.svg);
+    }
+}

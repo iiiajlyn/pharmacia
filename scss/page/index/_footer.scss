@@ -1,0 +1,124 @@
+.footer__main {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 100;
+    color: $pallete-light;
+
+    @media screen and (max-width: 1200px) {
+        position: relative;
+    }
+
+    &.sea {
+        background: $gradient__sea;
+    }
+
+    .container {
+        padding: 20px 0;
+    }
+
+    .discharge {
+        display: inline-block;
+        border-bottom: 2px dotted $pallete-base__sea;
+    }
+
+    &-box {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1360px;
+        margin: auto;
+        padding: 30px 20px;
+        width: 100%;
+
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 30px 40px;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 0;
+
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: -15px;
+            padding-bottom: 30px;
+        }
+
+        &.address {
+            li {
+                margin-left: 0;
+            }
+
+            @media screen and (max-width: 1200px) {
+                order: 2;
+            }
+        }
+
+        &.contacts {
+            @media screen and (max-width: 1200px) {
+                order: 1;
+            }
+        }
+
+        li {
+            display: inline-block;
+            margin-left: 40px;
+
+            br {
+                display: none;
+
+                @media screen and (max-width: 1200px) {
+                    display: inline-block;
+                }
+            }
+
+            &.title {
+                display: none;
+                font-weight: bold;
+                padding-bottom: 10px;
+
+
+                @media screen and (max-width: 1200px) {
+                    display: inline-block;
+                }
+            }
+
+            @media screen and (max-width: 1200px) {
+                margin-left: 0;
+            }
+        }
+
+        &.policy {
+            display: none;
+
+            @media screen and (max-width: 1200px) {
+                display: block;
+                order: 3;
+            }
+        }
+    }
+
+    .ico.size-s {
+        @media screen and (max-width: 1200px) {
+            margin-left: 0;
+            border: 0;
+        }
+    }
+
+    .ico.point::before {
+        @media screen and (max-width: 1200px) {
+            display: none;
+        }
+    }
+
+    a {
+        color: $pallete-light;
+        text-decoration: none;
+    }
+}

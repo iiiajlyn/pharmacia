@@ -1,0 +1,27 @@
+.company-info {
+    background-position: center;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 110px;
+
+    h1,
+    h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+
+    }
+
+    p {
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__box-logo {
+        display: flex;
+        justify-content: space-around;
+
+        img {
+            width: 80%;
+        }
+    }
+}

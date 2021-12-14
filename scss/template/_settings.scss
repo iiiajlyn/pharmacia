@@ -1,0 +1,40 @@
+//Variables
+
+$pallete-dark: #000;
+$pallete-light: #fff;
+$gradient__base: linear-gradient(180deg, #FFFFFF -39.36%, #E5E5E5 178.87%);
+
+$pallete-dark__base: #132F57;
+$pallete-light__base: #F9F9F9;
+
+$pallete-light__sea: #E4FAF9;
+$pallete-base__sea: #13b7aa;
+$pallete-comp__sea: #13838B;
+$gradient__sea: linear-gradient(121.07deg, $pallete-base__sea -2.76%, $pallete-dark__base 87.26%);
+
+$pallete-dark__base: #132F57;
+$pallete-light__sky: #E4F2FA;
+$pallete-base__sky: #3C9CD7;
+$gradient__sky: linear-gradient(121.07deg, $pallete-base__sky -2.76%, $pallete-dark__base 87.26%);
+
+$radius-xl: 60px;
+$radius-x: 30px;
+$radius-l: 15px;
+$radius-s: 5px;
+
+$font-s: 14px;
+$font-m: 16px;
+$font-l: 26px;
+$font-x: 50px;
+$font-xl: 62px;
+
+$family__base: 'Montserrat',
+sans-serif;
+$family__title: 'Bebas Neue',
+sans-serif;
+
+//Mixins
+
+@mixin transition($time: 0.5s, $name: ease-out) {
+    transition: $time $name;
+}

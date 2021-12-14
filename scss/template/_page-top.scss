@@ -1,0 +1,152 @@
+.page-top {
+    overflow: hidden;
+    margin-bottom: -$radius-xl;
+    position: relative;
+    border-radius: 0 0 $radius-xl $radius-xl;
+    z-index: 100;
+
+    h1,
+    h2 {
+        color: $pallete-light;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 30px;
+        }
+    }
+
+    &__box {
+        overflow: hidden;
+        max-height: 785px;
+        height: 100vh;
+        position: relative;
+        color: $pallete-light;
+        display: flex;
+        overflow: hidden;
+
+        @media screen and (max-width: 1200px) {
+            height: 450px;
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            @media screen and (max-width: 1200px) {
+                padding-top: 80px;
+            }
+        }
+
+        &-bg {
+            position: absolute;
+            width: 80%;
+            height: 100%;
+            left: 10%;
+            top: 140px;
+            border-radius: $radius-x;
+            background-position: center;
+            background-size: cover;
+            @include transition;
+
+            @media screen and (max-width: 1200px) {
+                width: 100%;
+                border-radius: 0;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        &.left {
+            @media screen and (max-width: 1200px) {
+                position: relative;
+                z-index: 100;
+            }
+        }
+
+        &.right {
+
+            @media screen and (max-width: 1200px) {
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                opacity: 0.3;
+                left: 0;
+            }
+        }
+
+        &.sea {
+            background: transparentize($pallete-base__sea, 0.6);
+        }
+
+        &.sky {
+            background: transparentize($pallete-base__sky, 0.6);
+        }
+    }
+
+    &.sea {
+        justify-content: flex-end;
+        background: $gradient__sea;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-image: url("/img/bg-sea.png");
+            background-image: url("/img/bg-sea.webp");
+            transition: all 0.5s ease-out 0s;
+
+            @media screen and (max-width: 1200px) {
+                display: none;
+            }
+
+        }
+
+        .page-main__box-content {
+            padding-right: 30px;
+        }
+    }
+
+    &.sky {
+        background: $gradient__sky;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-image: url("/img/bg-sky.png");
+            background-image: url("/img/bg-sky.webp");
+            background-size: contain;
+            transition: all 0.5s ease-out 0s;
+
+            @media screen and (max-width: 1200px) {
+                display: none;
+            }
+        }
+
+        .page-main__box-content {
+            padding-left: 80px;
+        }
+    }
+
+}
+
+// section.page-top.sea:hover {
+//     &::before {
+//         width: 103%;
+//     }
+// }
+
+// section.page-top.sky:hover {
+//     &::before {
+//         width: 103%;
+//     }
+// }

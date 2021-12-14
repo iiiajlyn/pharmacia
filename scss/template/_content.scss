@@ -1,0 +1,50 @@
+.content {
+    padding: 110px 0;
+
+    &.base {
+        background-color: $pallete-light__base;
+    }
+
+    &.sea {
+        background-color: $pallete-light__sea;
+    }
+
+    &.sky {
+        background-color: $pallete-light__sky;
+    }
+
+    p {
+        padding-bottom: 20px;
+        padding-right: 30px;
+
+        @media screen and (max-width: 1000px) {
+            padding-right: 0px;
+        }
+    }
+
+    &__center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 1000px) {
+            img {
+                width: 80%;
+                padding-top: 30px;
+            }
+        }
+
+    }
+
+    &__box-img {
+        img {
+            width: calc(100% - 30px);
+            border-radius: $radius-x;
+            padding-right: 30px;
+
+            @media screen and (max-width: 1200px) {
+                padding-left: 30px;
+            }
+        }
+    }
+}

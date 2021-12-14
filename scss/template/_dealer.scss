@@ -1,0 +1,17 @@
+.dealer {
+    padding-bottom: 110px;
+
+    h2 {
+        padding: 0;
+        margin: 0;
+    }
+
+    &__form {
+        padding-top: 10px;
+
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@use 'sass:math';
+//Plugin
+@import 'plugin/_grid';
+@import 'plugin/_animate';
+@import '../node_modules/owl.carousel/src/scss/owl.carousel.scss';
+
+//Template
+@import 'template/_settings';
+@import 'template/_base';
+@import 'template/_fonts';
+@import 'template/_scroll';
+@import 'template/_header';
+@import 'template/_footer';
+@import 'template/_page-top';
+@import 'template/_quote';
+@import 'template/_dealer';
+@import 'template/_partners';
+@import 'template/_principles';
+@import 'template/_contacts';
+@import 'template/_team';
+@import 'template/_company-info';
+
+//Module
+@import 'page/equipment/_content-product';
+@import 'page/equipment/_product-info';
+@import 'page/equipment/_goods';

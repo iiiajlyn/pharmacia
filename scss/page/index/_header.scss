@@ -1,0 +1,29 @@
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+
+    .header__nav-box {
+        display: none;
+
+        @media screen and (max-width: 1200px) {
+            display: flex;
+        }
+    }
+
+    &__main {
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+
+        &-logo {
+            padding-top: 46px;
+        }
+    }
+}
+
+.header .nav__ico.dark path {
+    stroke: $pallete-light !important;
+}

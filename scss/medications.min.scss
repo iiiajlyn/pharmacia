@@ -1,0 +1,24 @@
+@use 'sass:math';
+//Plugin
+@import 'plugin/_grid';
+@import 'plugin/_animate';
+
+//Template
+@import 'template/_settings';
+@import 'template/_base';
+@import 'template/_fonts';
+@import 'template/_scroll';
+@import 'template/_header';
+@import 'template/_footer';
+@import 'template/_page-top';
+@import 'template/_quote';
+@import 'template/_content';
+@import 'template/_dealer';
+@import 'template/_company-info';
+@import 'template/_principles';
+@import 'template/_contacts';
+@import 'template/_team';
+@import 'template/_partners';
+
+//Module
+@import 'page/medications/_map-point';

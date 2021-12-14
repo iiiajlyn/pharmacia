@@ -1,0 +1,15 @@
+@use 'sass:math';
+//Plugin
+@import 'plugin/_grid';
+
+//Template
+@import 'template/_settings';
+@import 'template/_base';
+@import 'template/_fonts';
+@import 'template/_scroll';
+@import 'template/_header';
+
+//Module
+@import 'page/index/_header';
+@import 'page/index/_main';
+@import 'page/index/_footer';
