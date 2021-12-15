@@ -6,7 +6,7 @@
                 <li class="map-point__box-item" style="left: 50%; top:52%;">
                     <p class="sity">Москва</p>
                     <img src='/img/point-dark.png' alt='img' srcset='/img/svg/point-dark.svg'>
-                    <ol class="left">
+                    <ol>
                         <li class="sity">Москва</li>
                         <li>ГКУ АЗ (КС) ДЗМ</li>
                         <li>ГКОБ № 1 ДЗМ ГБУЗ</li>
@@ -15,10 +15,10 @@
                     </ol>
 
                 </li>
-                <li class="map-point__box-item activ" style="left: 14%; top:40%;">
+                <li class="map-point__box-item" style="left: 14%; top:40%;">
                     <p class="sity">Москва</p>
                     <img src='/img/point-dark.png' alt='img' srcset='/img/svg/point-dark.svg'>
-                    <ol class="left">
+                    <ol>
                         <li class="sity">Москва</li>
                         <li>ГКУ АЗ (КС) ДЗМ</li>
                         <li>ГКОБ № 1 ДЗМ ГБУЗ</li>
@@ -29,7 +29,7 @@
                 <li class="map-point__box-item" style="left: 76%; top: 71%;">
                     <p class="sity">Москва</p>
                     <img src='/img/point-dark.png' alt='img' srcset='/img/svg/point-dark.svg'>
-                    <ol class="right">
+                    <ol>
                         <li class="sity">Москва</li>
                         <li>ГКУ АЗ (КС) ДЗМ</li>
                         <li>ГКОБ № 1 ДЗМ ГБУЗ</li>

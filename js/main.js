@@ -25,16 +25,18 @@ new WOW().init();
 $(window).scroll(function () {
     let height = $(window).scrollTop();
 
-    /*Если сделали скролл на 100px задаём новый класс для header*/
     if (height > 400) {
         $('.nav__ico').addClass('dark');
     }
-
     else {
-        /*Если меньше 100px удаляем класс для header*/
         $('.nav__ico').removeClass('dark');
     }
 
 }
-
 );
+let mapPoint = document.querySelectorAll(".map-point__box-item");
+for (let elem of mapPoint) {
+    if (parseInt(elem.style.left) > 50) {
+        elem.classList.add("left")
+    }
+}
